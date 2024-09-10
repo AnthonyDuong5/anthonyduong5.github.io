@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="AnthonyDuong5 Website">
+        <meta name="description" content="AnthonyDuong5 Webpage">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Anthony Duong">
-        <title>AnthonyDuong5 Website</title>
+        <title>AnthonyDuong5 Webpage</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="script.js"></script>
     </head>
-    <body>
+    <body id="webpage" oncut="noCopy()" oncopy="noCopy()">
         <header>
-            <h1>AnthonyDuong5 Website</h1>
+            <h1>AnthonyDuong5 Webpage</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,7 +28,7 @@
             </section>
             <section id="about">
                 <h2>About</h2>
-                <p>CS undergrad student at UCR, class of 2025. Interested in programming and data analysis.</p>
+                <p id="description" onmouseover="boldDescription()" onmouseout="resetDescription()">CS undergrad student at UCR, class of 2025. Interested in programming and data analysis.</p>
             </section>
             <section id="contact">
                 <h2>Contact</h2>
@@ -39,8 +39,8 @@
             </section>
         </main>
         <footer>
-            <p>Website deployed using GitHub Pages.</p>
-            <button id="button">Button</button>
+            <p>Webpage deployed using GitHub Pages.</p>
+            <button onclick="buttonCounter()">Button</button>
         </footer>
     </body>
 </html>
