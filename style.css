@@ -47,14 +47,3 @@ footer {
 .animate {
     animation: move 10s linear infinite;
 }
-@keyframes move {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(calc(100vw - 400px));
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
